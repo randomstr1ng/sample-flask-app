@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Webshop</h1>
+        <div class="product">
+            <h2>Product Name: Amazing Widget</h2>
+            <p>Description: This is an amazing widget that does many things.</p>
+            <p>Price: $19.99</p>
+            <p>Available Items: {{ available_items }}</p>
+        </div>
+    </div>
+</body>
+</html>
